@@ -40,10 +40,14 @@ fs.writeFile('./test.json', jsondatax, (err) => {
     }
 });
 var connection = mysql.createConnection({
-    host : '127.0.0.1',
-    user : 'kukkui',
-    password : 'kukkui',
-    database : 'nodelogin'
+    host: "us-cdbr-east-02.cleardb.com",
+    user: "b8089cf0ab70ae",
+    password: "3a2e21cb",
+    database: "heroku_d46b5d77373e9f0"
+    // host : '127.0.0.1',
+    // user : 'kukkui',
+    // password : 'kukkui',
+    // database : 'nodelogin'
 });
 
 //Set app as express 
