@@ -1,5 +1,5 @@
 {
-  "name": "kknodejs-login",
+  "name": "js-excel-pdf",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -31,12 +31,12 @@
 
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kukkui/js-x-pdf.git"
+    "url": "git+https://github.com/Kukkui/js-excel-pdf.git"
   },
   "bugs": {
-    "url": "https://github.com/Kukkui/js-x-pdf/issues"
+    "url": "https://github.com/Kukkui/js-excel-pdf/issues"
   },
-  "homepage": "https://github.com/Kukkui/js-x-pdf#readme",
+  "homepage": "https://github.com/Kukkui/js-excel-pdf#readme",
   "keywords": [],
   "description": ""
 }
