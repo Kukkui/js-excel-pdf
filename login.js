@@ -296,4 +296,7 @@ app.get('/home',function(request,response){
 //         })
 //         .catch(next);
 // });
-app.listen(3000);
+const port=process.env.PORT || 3000;
+app.listen(port,function(){
+    console.log("Server success!");
+});
