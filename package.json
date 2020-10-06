@@ -1,10 +1,10 @@
 {
   "name": "kknodejs-login",
   "version": "1.0.0",
-  "main": "login.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./login.js"
+    "start": "node login.js"
   },
   "author": "",
   "license": "ISC",
@@ -28,15 +28,15 @@
     "utf8": "^3.0.0",
     "xlsx-to-json": "^0.3.0"
   },
-  "devDependencies": {},
+
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kukkui/kknodejs-login.git"
+    "url": "git+https://github.com/Kukkui/js-x-pdf.git"
   },
   "bugs": {
-    "url": "https://github.com/Kukkui/kknodejs-login/issues"
+    "url": "https://github.com/Kukkui/js-x-pdf/issues"
   },
-  "homepage": "https://github.com/Kukkui/kknodejs-login#readme",
+  "homepage": "https://github.com/Kukkui/js-x-pdf#readme",
   "keywords": [],
   "description": ""
 }
