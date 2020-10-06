@@ -12,6 +12,7 @@
     "@pdf-lib/fontkit": "^1.0.0",
     "bootstrap-table": "^1.18.0",
     "convert-excel-to-json": "^1.7.0",
+    "express": "^4.17.1",
     "express-session": "^1.17.1",
     "fill-pdf-utf8": "^2.2.1",
     "formidable": "^1.2.2",
@@ -36,5 +37,6 @@
     "url": "https://github.com/Kukkui/kknodejs-login/issues"
   },
   "homepage": "https://github.com/Kukkui/kknodejs-login#readme",
+  "keywords": [],
   "description": ""
 }
