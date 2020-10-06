@@ -1,4 +1,4 @@
-var mysql = require('mysql');
+
 var express = require('express');
 var session = require('express-session');
 var bodyParser = require('body-parser');
@@ -10,7 +10,8 @@ var http = require('http');
 var fill_pdf = require('fill-pdf-utf8');
 const pdftk = require('node-pdftk');
 var formidable = require('formidable');
-
+const mysql = require("mysql");
+const dbConfig = require("./db.config.js");
 // var pdffiller = require('pdffiller');
 // var execPHP = require('./execphp.js')();
 
@@ -39,16 +40,28 @@ fs.writeFile('./test.json', jsondatax, (err) => {
         console.log('done');
     }
 });
-var connection = mysql.createConnection({
-    host: "us-cdbr-east-02.cleardb.com",
-    user: "b8089cf0ab70ae",
-    password: "3a2e21cb",
-    database: "heroku_d46b5d77373e9f0"
-    // host : '127.0.0.1',
-    // user : 'kukkui',
-    // password : 'kukkui',
-    // database : 'nodelogin'
+
+
+
+var connection = mysql.createPool({
+  host: dbConfig.HOST,
+  user: dbConfig.USER,
+  password: dbConfig.PASSWORD,
+  database: dbConfig.DB
 });
+
+module.exports = connection;
+
+// var connection = mysql.createConnection({
+//     host: "us-cdbr-east-02.cleardb.com",
+//     user: "b8089cf0ab70ae",
+//     password: "3a2e21cb",
+//     database: "heroku_d46b5d77373e9f0"
+//     // host : '127.0.0.1',
+//     // user : 'kukkui',
+//     // password : 'kukkui',
+//     // database : 'nodelogin'
+// });
 
 //Set app as express 
 var app = express();
@@ -300,7 +313,7 @@ app.get('/home',function(request,response){
 //         })
 //         .catch(next);
 // });
-const port=process.env.PORT || 3000;
-app.listen(port,function(){
-    console.log("Server success!");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}.`);
 });
