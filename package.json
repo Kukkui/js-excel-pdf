@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "login.js"
+    "start": "node login.js",
+    "test": "node login.js"
   },
   "author": "",
   "license": "ISC",
